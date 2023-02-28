@@ -38,10 +38,10 @@ async def gmute_user(client: Client, message: Message):
         return await ex.edit("**Chal Chal Baap ko Mat sikha.. 👑**")
     try:
         if user.id in (await get_rraid_users()):
-           await ex.edit("shicyReplay  is activated on this user")
+           await ex.edit("Replayshicy  is activated on this user")
            return
         await karman_user(user.id)
-        await ex.edit(f"[{user.first_name}](tg://user?id={user.id}) Activated ReplyKarman!")
+        await ex.edit(f"[{user.first_name}](tg://user?id={user.id}) Activated Replyshicy!")
     except Exception as e:
         await ex.edit(f"**ERROR:** `{e}`")
         return
